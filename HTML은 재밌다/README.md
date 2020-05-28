@@ -251,6 +251,7 @@
   ```
 
 - textarea
+
   ```html
   <form action="" method="GET">
     <label for="field">자기소개</label>
@@ -260,10 +261,136 @@
   ```
 
 - button
+
   ```html
   <form action="" method="GET">
     <button type="button">버튼</button>
     <button type="submit">제출하기</button>
     <button type="reset">다시쓰기</button>
   </form>
+  ```
+
+- table
+
+  ```html
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">월</th>
+        <th scope="col">화</th>
+        <th scope="col">수</th>
+        <th scope="col">목</th>
+        <th scope="col">금</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1교시</th>
+        <td rowspan="2">정보처리알고리즘</td>
+        <td>데이터베이스개론</td>
+        <td>통일과 남북한 관계의 이해</td>
+      </tr>
+      <tr>
+        <th scope="row">2교시</th>
+        <!-- <td rowspan="2">정보처리알고리즘</td> -->
+        <td>웹프로그래밍2</td>
+        <td>응용소프트웨어설계</td>
+      </tr>
+      <tr>
+        <th scope="row" colspan="5">점심시간</th>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+  ```
+
+- 미디어 파일 Media
+
+  ```html
+  <!-- audio -->
+  <audio src="" loop autoplay controls>
+    <audio>
+      <source src="" type="" />
+      <source src="" type="" />
+      <source src="" type="" />
+      <p>브라우저를 업데이트하거나 크롬으로 바꾸세요..</p>
+      <a href="https://browsehappy.com/">업데이트하러 가기</a>
+    </audio>
+
+    <!-- video -->
+    <video src="" loop autoplay controls>
+      <video autoplay>
+        <source src="" type="" />
+        <source src="" type="" />
+        <source src="" type="" />
+        <p>브라우저를 업데이트하거나 크롬으로 바꾸세요..</p>
+        <a href="https://browsehappy.com/">업데이트하러 가기</a>
+      </video>
+
+      <!-- iframe -->
+      <!-- 직접 쓸 경우는 거의 없다. 다른 곳에서 퍼올 때 쓰이기도 한다. -->
+    </video>
+  </audio>
+  ```
+
+- 기타 Etc
+
+  ```html
+  <!-- abbreviation약자 -->
+  <p>
+    너..혹시
+    <abbr title="Attention Deficit Hyperactivity Disorder">ADHD</abbr>니?
+  </p>
+
+  <!-- address -->
+  <address>
+    <h1>최문경</h1>
+    <a href="">깃허브</a>
+  </address>
+
+  <!-- preformatted text, code -->
+  <pre>
+    ㅇ ㅏ ㄴ ㅕ ㅎ ㅏ ㅅ ㅔ ㅇ
+      ㄴ    ㅇ             ㅛ
+  </pre>
+
+  <pre>
+    <code>
+      <!-- 코드 작성(code태그만 써서 code를 작성해도 상관없음) -->
+    </code>
+  </pre>
+  ```
+
+- Doctype & Documnet Structure
+
+  ```html
+  <!-- 브라우저야, 이 문서는 HTML5 버전으로 작성된 문서야  그러니까 그에 맞춰서 렌더링 해줘~ -->
+  <!-- DOCTYPE == document type -->
+  <!DOCTYPE html>
+  <html>
+    <head></head>
+    <body></body>
+  </html>
+  ```
+
+- title, link, style, script
+
+  - spoqa han sans글씨체 괜찮은듯
+  - script는 head보다 body가 끝나기 직전에 쓰는게 더 좋은 이유? link와 달리 script는 script파일을 모두 읽어오기전까지는 body안의 내용을 읽지 않아서 비효율적이다.
+
+- meta
+  - 필수 attribute: `name`과 `content`
+  ```html
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="denomoon" />
+  <meta name="keywords" content="html, css, js" />
+  <meta name="description" content="html을 공부하고 정리해보았습니다." />
   ```
