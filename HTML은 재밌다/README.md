@@ -4,6 +4,10 @@
 
 - 웹페이지의 가장 기본이다.
 - 문서의 구조와 정보 위계가 명확하게 보이는 아름다운 HTML 코드를 작성하자. -> Semantic Markup -> 검색 엔진 최적화에 도움이 된다.(Search Engine Optimization)
+- Hyper Text Markup Language
+  - Hyper Text는 다른 웹페이지로 넘어갈 수 있게 해주는 text이고, 웹페이지들은 하이퍼텍스트를 통해서 서로 연결되어있다.
+  - Markup은 형광펜을 칠한 것과 같이 구분을 한다는 것인데, 태그를 이용해 문서의 어느 부분이 제목인지, 문단인지 역할을 구분을 해주는 것이다.
+  - 우리가 개발할 때 편할 수도 있지만, 시각장애인 분들이나, 검색엔진을 위해 마크 업을 명확하게 해야한다.
 
 ---
 
@@ -41,6 +45,7 @@
 **이미지 Image**
 
 - 이미지 태그는 src와 alt 두개의 속성을 모두 적어줘야한다.
+- alt속성은 alternate의 줄임말로, 어떠한 이유로 이미지를 불러오지 못했을 때 이미지 대신 보여주는 대체 텍스트이다. 또한 시각장애인분들이 스크린 리더기를 사용하실 때, 스크린 리더기에서는 이미지를 alt의 내용을 읽어준다고 한다.
 
 ```html
 <img src="절대경로" alt="고양이와 강아지" />
@@ -155,3 +160,110 @@
 
 - 아무런 의미를 가지고 있지 않다. 오로지 스타일링을 위한 태그이다.
   > 정말 아무리 생각해도 떠오르는 태그가 없을 때 사용...
+
+**Form**
+
+- 반드시 써야하는 속성 2가지 -> action과 method
+  - action은 form을 처리할 곳으로 보내는 주소를 적고 method는 처리할 방식을 적는다.(GET또는 POST)
+- input
+
+  ```html
+  <form action="" method="GET">
+    <input
+      type="text"
+      placeholder="아이디를 입력하세요"
+      minlength="5"
+      maxlength="13"
+      required
+    />
+    <input
+      type="text"
+      placeholder="이름을 입력하세요"
+      minlength="5"
+      maxlength="13"
+      value="최문경"
+      disabled
+    />
+    <input type="email" placeholder="이메일을 입력하세요" />
+    <input
+      type="password"
+      placeholder="비밀번호를 입력하세요"
+      minlength="6"
+      maxlength="14"
+    />
+    <input type="url" placeholder="포트폴리오 url을 입력하세요" />
+    <input
+      type="number"
+      placeholder="10~20사이의 수를 적으세요"
+      min="10"
+      max="20"
+    />
+    <input type="file" accept=".jpg, .png" />
+  </form>
+  ```
+
+- label
+
+  ```html
+  <form action="" method="GET">
+    <label for="user-id" />
+    <input type="text" required placeholder="아이디" />
+  </form>
+  ```
+
+- radio & checkbox
+
+  ```html
+  <!-- name은 radio그룹을 만들어주는 속성이고 value는 어떤 radio가 선택되었는지 알려주는 값 -->
+  <form action="" method="GET">
+    <input type="radio" id="subscribed" name="subscription" value="1" />
+    <label for="subscribed">구독</label>
+    <input type="radio" id="unsubscribed" name="subscription" value="0" />
+    <label for="unsubscribed">미구독</label>
+    <button type="submit">submit</button>
+  </form>
+
+  <form action="" method="GET">
+    <input type="checkbox" id="html" name="skills" value="html" />
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="skills" value="css" />
+    <label for="css">CSS</label>
+    <input type="checkbox" id="js" name="skills" value="js" />
+    <label for="js">JS</label>
+    <button type="submit">submit</button>
+  </form>
+
+  <!-- 제출 url: www.naver.com/?skills=html&skills=css&skills=js -->
+  ```
+
+- select & option
+
+  ```html
+  <form action="" method="GET">
+    <label for="skill">skill</label>
+    <select id="skill" name="skill">
+      <option value="html">html</option>
+      <option value="css">css</option>
+      <option value="js">js</option>
+    </select>
+    <button type="submit">submit</button>
+  </form>
+  ```
+
+- textarea
+  ```html
+  <form action="" method="GET">
+    <label for="field">자기소개</label>
+    <textarea id="field" placeholder="자기소개를 입력하세요" rows="" cols""></textarea>
+  </form>
+  <!-- rows와 cols는 보통 css로 작업해준다. -->
+  ```
+
+- button
+  ```html
+  <form action="" method="GET">
+    <button type="button">버튼</button>
+    <button type="submit">제출하기</button>
+    <button type="reset">다시쓰기</button>
+  </form>
+  ```
