@@ -7,12 +7,13 @@
   </head>
   <body>
     <header>
-      <h1>
+      <h1 class="logo">
         <a href="#">
           <img src="" alt="Twitter" />
         </a>
       </h1>
       <nav class="global-nav">
+        <!-- sectioning elements는 꼭 heading elements를! -->
         <h2 class="sr-only">navigation menu</h2>
         <ul>
           <li>
@@ -58,9 +59,10 @@
         </div>
       </header>
       <section>
+        <h2 class="sr-only">Twitt form</h2>
         <div>
           <a href="">
-            <img src="" alt="profile-image" />
+            <img src="" alt="user-image" />
           </a>
           <textarea
             name=""
@@ -68,17 +70,34 @@
             cols="30"
             rows="10"
             placeholder="무슨 일이 일어나고 있나요?"
+            maxlength="280"
           ></textarea>
         </div>
 
         <footer>
-          <input type="file" name="photo" id="photo" />
-          <button></button>
-          <button></button>
-          <button></button>
-          <strong></strong>
-          <button></button>
-          <button></button>
+          <form action="" method="POST">
+            <!-- input은 css가 먹지 않기 때문에 button으로 css를 해주고 js로 button을 눌렀을 때 input이 작동하도록 해야한다. -->
+            <button type="button" aria-label="파일 업로드하기"">
+              <!-- Icon -->
+            </button>
+            <input type="file" multiple accept="image/*, videos/" />
+            <button type="button" aria-label="gif파일 업로드하기">
+              <!-- Icon -->
+            </button>
+            <button type="button" aria-label="투표 업로드하기">
+              <!-- Icon -->
+            </button>
+            <button type="button" aria-label="이모지 선택하기">
+              <!-- Icon -->
+            </button>
+            <strong aria-label="280글자 중에서 0글자 쓰셨습니다.">
+
+            </strong>
+            <button type="button" aria-label="다른 트윗 추가하기"">
+              <!-- Icon -->
+            </button>
+            <button type="submit">트윗</button>
+          </form>
         </footer>
       </section>
     </main>
