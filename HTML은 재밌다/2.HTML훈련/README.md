@@ -23,11 +23,14 @@
 </div>
 ```
 
+---
+
 ### Logo in header
 
 ![사진](https://user-images.githubusercontent.com/19285811/69004168-abee3880-0949-11ea-93a0-291797349fa7.png)
 
 - 로고가 헤더안에 있을 때
+- heading태그안에 텍스트가 없어도 괜찮다. (alt의 속성값이 대신 해줌)
 
 ```html
 <div class="header">
@@ -42,6 +45,8 @@
   <a href="https://edu.goorm.io/qna">Q&amp;A</a>
 </div>
 ```
+
+---
 
 ### Breadcrumb & Pagination
 
