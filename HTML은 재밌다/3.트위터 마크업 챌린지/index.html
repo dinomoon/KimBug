@@ -25,7 +25,7 @@
           </li>
           <li><a href="">탐색하기</a></li>
           <li>
-            <span aria-label="5 unread notification">5</span>
+            <span aria-label="5개의 읽지 않은 메시지">5</span>
             <a href="#">
               <!-- Icon -->
               알림
@@ -60,10 +60,10 @@
       </header>
       <section>
         <h2 class="sr-only">Twitt form</h2>
-        <div>
-          <a href="">
-            <img src="" alt="user-image" />
-          </a>
+        <a href="">
+          <img src="" alt="user-image" />
+        </a>
+        <form action="" method="POST">
           <textarea
             name=""
             id=""
@@ -72,33 +72,32 @@
             placeholder="무슨 일이 일어나고 있나요?"
             maxlength="280"
           ></textarea>
-        </div>
+          <!-- input은 css가 먹지 않기 때문에 button으로 css를 해주고 js로 button을 눌렀을 때 input이 작동하도록 해야한다. -->
+          <button type="button" aria-label="파일 업로드하기"">
+            <!-- Icon -->
+          </button>
+          <input type="file" multiple accept="image/*, videos/" />
+          <button type="button" aria-label="gif파일 업로드하기">
+            <!-- Icon -->
+          </button>
+          <button type="button" aria-label="투표 업로드하기">
+            <!-- Icon -->
+          </button>
+          <button type="button" aria-label="이모지 선택하기">
+            <!-- Icon -->
+          </button>
+          <strong aria-label="280글자 중에서 0글자 쓰셨습니다.">
 
-        <footer>
-          <form action="" method="POST">
-            <!-- input은 css가 먹지 않기 때문에 button으로 css를 해주고 js로 button을 눌렀을 때 input이 작동하도록 해야한다. -->
-            <button type="button" aria-label="파일 업로드하기"">
-              <!-- Icon -->
-            </button>
-            <input type="file" multiple accept="image/*, videos/" />
-            <button type="button" aria-label="gif파일 업로드하기">
-              <!-- Icon -->
-            </button>
-            <button type="button" aria-label="투표 업로드하기">
-              <!-- Icon -->
-            </button>
-            <button type="button" aria-label="이모지 선택하기">
-              <!-- Icon -->
-            </button>
-            <strong aria-label="280글자 중에서 0글자 쓰셨습니다.">
+          </strong>
+          <button type="button" aria-label="다른 트윗 추가하기"">
+            <!-- Icon -->
+          </button>
+          <button type="submit">트윗</button>
+        </form>
+      </section>
+      <section>
+        <h2>Tweet</h2>
 
-            </strong>
-            <button type="button" aria-label="다른 트윗 추가하기"">
-              <!-- Icon -->
-            </button>
-            <button type="submit">트윗</button>
-          </form>
-        </footer>
       </section>
     </main>
   </body>
