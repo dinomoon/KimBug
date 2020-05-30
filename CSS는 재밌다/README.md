@@ -40,3 +40,49 @@
 4. 플로트, 나만 볼 수 있어요(feat.인라인) (인라인 요소는 float요소를 알아보고 옆에 배치 된다.)
 
 - 부모요소에 overflow: hidden; 을 사용하거나 ::after {content:''; display:block; clear:both;}를 사용하면 부모의 높이가 잡힌다.
+
+### position
+
+- static(기본값), relative, absolute, fixed, sticky
+- relative
+
+  - 원래 있던 자리를 기준으로 움직인다.
+  - 원래 있던 자리를 비워놓지 않는다.(다른 요소들이 침범하지 않음)
+
+- absolute
+
+  - 부모 요소 중에서 static이 아닌 position을 가진 부모를 기준으로 움직인다.
+  - float과 똑같은 특징을 가진다.(4번빼고) 인라인 요소도 absolute를 못알아본다.
+
+- fixed
+  - viewport를 기준으로 움직인다.
+
+### flex
+
+1. 나, 플렉스 박스 쓸거임
+2. 가로 정렬? 세로 정렬?
+3. 무조건 한 줄 안에 다 정렬?
+   - nowrap 무조건 한 줄안에 정렬
+   - wrap 너비만큼 알아서 정렬
+
+### 타이포그래피, typography
+
+- 디자인에 있어서 활자의 서체나 글자 배치 등의 구성 및 표현.
+- font-size
+  - px(절대단위), em(상대단위), rem(상대단위)
+  - em = equal to capital M (요소안에 적용된 폰트 사이즈의 배수)
+  - rem = root em = html em (html 폰트 사이즈의 배수)
+- line-height
+  - line-height: 1.5(em); px과 rem은 적어주지만 em은 생략해주는 것이 관례 (대부분의 경우에 em을 사용한다.)
+- letter-spacing
+
+  - 글자 간격(자간) em을 대부분 사용, 하지만 line-height와는 다르게 em을 생략하면 안된다.
+
+- font-family
+
+  - font-family: "Roboto", "Poppins", sans-serif; (Roboto없으면 Poppins, Poppins도 없으면 sans-serif체 중에서 아무거나를 font로 해달라)
+
+- font-weight
+  - 400: Regular, 700: bold
+- color
+  - hex, rgb, rgba
