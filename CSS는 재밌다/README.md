@@ -9,3 +9,12 @@
   box-sizing: border-box;
 }
 ```
+
+### Box
+
+- 모든 태그들은 display속성을 가지고 있다. 그리고 display속성의 값은 block, inline, inline-block, flex, grid가 있다.
+- Block -> 길막!
+  1. width값을 주지 않으면 부모의 width만큼 가진다.
+  2. width값을 줘도 나머지 부분을 자동으로 margin으로 채운다.
+  3. margin-left: auto를 했을 때 오른쪽으로 이동하는 것은 자동으로 생긴 auto마진을 왼쪽에 주기때문이다. -> margin: 0 auto;를 하면 자동으로 생긴 auto마진을 왼쪽 오른쪽에 나눠 갖기 때문에 가운데 정렬이 되는 것이다.
+  4. height값을 주지 않으면 자기 자신의 컨텐츠 또는 자식의 높이 만큼 height가 잡힌다.
