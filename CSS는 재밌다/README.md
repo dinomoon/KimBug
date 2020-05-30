@@ -24,3 +24,8 @@
 
 - inline -> 흐름
 - width, height, padding-top, padding-bottom, margin-top, margin-bottom을 사용할 수 없다!
+
+### inline-block
+
+- inline과 block의 장점을 가지고 있는 녀석
+- 흐름과 영역을 동시에 잡을 수 있다.
