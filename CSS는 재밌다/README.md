@@ -80,7 +80,10 @@
 
 - font-family
 
-  - font-family: "Roboto", "Poppins", sans-serif; (Roboto없으면 Poppins, Poppins도 없으면 sans-serif체 중에서 아무거나를 font로 해달라)
+  - font-family: Roboto, Poppins, sans-serif; (Roboto없으면 Poppins, Poppins도 없으면 sans-serif체 중에서 아무거나를 font로 해달라)
+  - 서체명이 한글이거나 띄어쓰기가 있는 경우 반드시 따옴표로 감싸줘야한다.
+  - serif: 꺾쇠가 있는 글씨체 (바탕체, 궁서체, 명조체)(줄의 연속성을 주어서 가독성을 높임)
+  - sans-serif: sans는 프랑스어로 없음을 뜻한다. 따라서 꺾쇠가 없는 서체를 말한다. (고딕체)(serif에 비해 깔끔하고 세련된 느낌)
 
 - font-weight
   - 400: Regular, 700: bold
