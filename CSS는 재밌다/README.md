@@ -88,4 +88,16 @@
 - font-weight
   - 400: Regular, 700: bold
 - color
+
   - hex, rgb, rgba
+
+- page Layout
+
+  - 반드시 container안에는 row만! 그리고 row안에는 col-만!! 다른 것들이 들어가면 나중에 스타일이 꼬일 수 있다.(bootstrap때문에)
+
+- final project
+
+  - `작업환경세팅`
+
+    - 항상 시작하기 전에 무작정 덤비지 말고 한 템포 쉬어서 작업환경부터!
+    - 필요한 css, assets가져오고 reset하기!

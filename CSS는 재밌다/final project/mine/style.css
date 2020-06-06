@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.top-header {
+  background-color: #fdded8;
+  height: 588px;
+  text-align: center;
+}
+
+.top-header__title {
+  font-weight: bold;
+  letter-spacing: -5%;
+}
+
+.top-header__btn {
+  width: 160px;
+  height: 56px;
+  border: none;
+}
+
+.top-header__btn:nth-of-type(1) {
+  color: #fff;
+  background-color: #3040c4;
+}
+
+.top-header__btn:nth-of-type(2) {
+  color: #3040c4;
+  background-color: #fff;
+}
+
+.intro-section {
+  height: 340px;
+  background-color: #f4f5f7;
+}
+
+.intro-section__title {
+  font-weight: bold;
+  letter-spacing: -4%;
+}
+
+.program-section {
+  text-align: center;
+}
+
+.program-section .section-type {
+  color: #009b4d;
+}
+
+.section-type {
+  font-weight: bold;
+  letter-spacing: -1%;
+}
+
+.section-type-title {
+  font-weight: bold;
+  letter-spacing: -3%;
+}
+
+.curriculum-section .section-type {
+  color: #0189d1;
+}
+
+.program-section__img-box {
+  height: 300px;
+}
+
+.program-section__img-box:nth-of-type(1) {
+  background: no-repeat url("../assets/img-fulltime-campus.png");
+}
+
+.program-section__img-box:nth-of-type(2) {
+  background: no-repeat url("../assets/img-fulltime-remote.png");
+}
+
+.program-section__img-box:nth-of-type(3) {
+  background: no-repeat url("../assets/img-parttime-flex.png");
+}
