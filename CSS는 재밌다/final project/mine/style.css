@@ -1,3 +1,4 @@
+/* reset */
 * {
   box-sizing: border-box;
 }
@@ -6,21 +7,54 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+}
+
+button:focus {
+  border: none;
+}
+
+/* common */
+p {
+  font-size: 22px;
+  line-height: 1.45;
+  letter-spacing: -1%;
+}
+
+/* top-header */
 .top-header {
   background-color: #fdded8;
   height: 588px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .top-header__title {
+  font-size: 70px;
+  line-height: 1.02;
   font-weight: bold;
   letter-spacing: -5%;
+  margin-bottom: 32px;
+}
+
+.top-header__paragraph {
+  margin-bottom: 32px;
 }
 
 .top-header__btn {
   width: 160px;
   height: 56px;
-  border: none;
+  margin-right: 16px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .top-header__btn:nth-of-type(1) {
@@ -33,16 +67,27 @@ body {
   background-color: #fff;
 }
 
+/* intro-section */
 .intro-section {
   height: 340px;
   background-color: #f4f5f7;
 }
 
+.intro-section .row .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .intro-section__title {
   font-weight: bold;
   letter-spacing: -4%;
+  font-size: 26px;
+  line-height: 1.3;
+  margin-bottom: 16px;
 }
 
+/* program-section */
 .program-section {
   text-align: center;
 }
@@ -58,9 +103,12 @@ body {
 
 .section-type-title {
   font-weight: bold;
+  font-size: 56px;
+  line-height: 1;
   letter-spacing: -3%;
 }
 
+/* curriculum-section */
 .curriculum-section .section-type {
   color: #0189d1;
 }
@@ -69,14 +117,21 @@ body {
   height: 300px;
 }
 
-.program-section__img-box:nth-of-type(1) {
-  background: no-repeat url("../assets/img-fulltime-campus.png");
-}
-
 .program-section__img-box:nth-of-type(2) {
-  background: no-repeat url("../assets/img-fulltime-remote.png");
+  background: no-repeat url("../assets/img-fulltime-campus.png") center;
 }
 
 .program-section__img-box:nth-of-type(3) {
+  background: no-repeat url("../assets/img-fulltime-remote.png") center;
+}
+
+.program-section__img-box:nth-of-type(4) {
   background: no-repeat url("../assets/img-parttime-flex.png");
+}
+
+/* media query */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 960px;
+  }
 }
