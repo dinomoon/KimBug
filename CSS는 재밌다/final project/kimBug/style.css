@@ -43,6 +43,59 @@ p {
   letter-spacing: -0.01em;
 }
 
+.fill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #3040c4;
+  border-radius: 2px;
+  transition: opacity 0.3s;
+}
+
+.fill-button:hover {
+  opacity: 0.6;
+}
+
+.fill-button.inverted {
+  background-color: #fff;
+  color: #3040c4;
+}
+
+/* Landing Section */
+.landing {
+  background-color: #fdded8;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.landing__title {
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 24px;
+}
+
+.landing__desc {
+  margin-bottom: 24px;
+}
+
+.landing__btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+.landing__btn-group .fill-button:first-child {
+  margin-right: 8px;
+}
+
 /* Custom Grid System - Fix container width */
 @media screen and (min-width: 1200px) {
   .container {
@@ -54,5 +107,27 @@ p {
   p {
     font-size: 22px;
     line-height: 1.36;
+  }
+
+  .fill-button {
+    width: 160px;
+    height: 56px;
+    font-size: 18px;
+  }
+
+  /* landing Section */
+  .landing {
+    height: auto;
+    padding: 120px 0;
+  }
+
+  .landing__title {
+    font-size: 70px;
+    line-height: 1.02;
+    margin-bottom: 32px;
+  }
+
+  .landing__desc {
+    margin-bottom: 32px;
   }
 }

@@ -110,3 +110,17 @@
 
   - 항상 시작하기 전에 무작정 덤비지 말고 한 템포 쉬어서 작업환경부터!
   - 필요한 css, assets가져오고 reset만들기
+  - form관련 요소들은 font-family가 적용되지 않고, 글씨크기도 달라서 reset에서 해주면 좋다.
+
+  ```css
+  /* 암기 */
+  button:focus,
+  button:active,
+  input:focus,
+  input:active,
+  textarea:focus,
+  textarea:active {
+    outline: none;
+    box-shadow: none;
+  }
+  ```
