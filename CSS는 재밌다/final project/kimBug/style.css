@@ -259,6 +259,22 @@ p {
   text-decoration: underline;
 }
 
+/* footer */
+.footer {
+  padding: 24px 0;
+  color: #807f81;
+}
+
+.footer-list-item {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-list-item:last-child {
+  margin-bottom: 0;
+}
+
 /* Custom Grid System - Fix container width */
 @media screen and (min-width: 1200px) {
   .container {
@@ -407,5 +423,22 @@ p {
   .subscription-detail-desc a {
     color: #3040c4;
     text-decoration: underline;
+  }
+
+  /* footer */
+  .footer {
+    padding: 16px 0;
+  }
+
+  .footer-list {
+    display: flex;
+  }
+
+  .footer-list-item {
+    margin-right: 16px;
+  }
+
+  .footer-list-item:last-child {
+    margin-right: 0;
   }
 }
