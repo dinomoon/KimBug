@@ -67,7 +67,7 @@ p {
   color: #3040c4;
 }
 
-.section-type {
+.section-category__name {
   display: block;
   font-size: 16px;
   line-height: 1.5;
@@ -128,11 +128,11 @@ p {
 }
 
 /* program section */
-.program {
+.section-category {
   padding: 80px 0;
 }
 
-.program .section-type {
+.program .section-category__name {
   color: #009b4d;
 }
 
@@ -175,6 +175,31 @@ p {
   transition: all 0.4s;
 }
 
+/* curriculum */
+.curriculum .row:first-child {
+  margin-bottom: 48px;
+}
+
+.curriculum .row:first-child .curriculum-desc {
+  margin-bottom: 32px;
+}
+
+.curriculum .row:last-child .col-12:first-child {
+  margin-bottom: 40px;
+}
+
+.curriculum .section-category__name {
+  color: #0189d1;
+}
+
+.curriculum-img {
+  display: none;
+}
+
+.curriculum-img img {
+  display: block;
+}
+
 /* Custom Grid System - Fix container width */
 @media screen and (min-width: 1200px) {
   .container {
@@ -194,9 +219,20 @@ p {
     font-size: 18px;
   }
 
-  .section-type {
+  .section-category__name {
     margin-bottom: 16px;
     font-size: 22px;
+  }
+
+  .section-category {
+    padding-bottom: 96px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 36px;
   }
 
   /* landing Section */
@@ -225,16 +261,6 @@ p {
   }
 
   /* program Section */
-  .program {
-    padding-bottom: 96px;
-    text-align: center;
-  }
-
-  .section-title {
-    font-size: 56px;
-    line-height: 1;
-    margin-bottom: 36px;
-  }
 
   .program .row:first-child {
     margin-bottom: 72px;
@@ -251,5 +277,23 @@ p {
   .program-card strong {
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  /* curriculum */
+  .curriculum .row:first-child {
+    margin-bottom: 24px;
+  }
+
+  .curriculum .row:last-child .col-12:first-child {
+    margin-bottom: 0;
+  }
+
+  .curriculum-img {
+    display: block;
+  }
+
+  .curriculum-img img {
+    width: 100%;
+    height: auto;
   }
 }
